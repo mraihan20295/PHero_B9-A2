@@ -352,14 +352,14 @@ main>section+section {
 
 .section-header {
     text-align: center;
-    width: 60%;
+    width: 70%;
     margin-inline: auto;
     margin-bottom: 4.8rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
     .section-header {
-        width: 85%;
+        width: 80%;
     }
 }
 
@@ -537,18 +537,26 @@ main>section+section {
 
 /* Offers */
 
-.package-1 {
+.package {
     background: url(../Images/offer-pkg-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding-block: 5rem;
     border-radius: var(--border-radius);
+    margin-bottom: 5rem;
+}
+
+.package--left {
+    background: url(../Images/offer-pkg-bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .tour-card {
     margin-inline: auto 5rem;
-    width: 60%;
+    width: 50%;
     padding: 5rem;
     background: rgba(255, 255, 255, 0.8);
     border-radius: var(--border-radius);
@@ -557,29 +565,32 @@ main>section+section {
     row-gap: 2rem;
 }
 
-
-@media screen and (max-width:600px) {
-    .package-1 {
-        padding-block: 5rem;
-    }
-
-    .tour-card {
-        margin-block: auto 5rem;
-        width: 90%;
-        height: 60%;
-        padding: 5rem;
-    }
+.tour-card--left {
+    margin-inline: 5rem auto;
 }
-
 
 .tour-card p {
     margin-top: 0;
+}
+
+@media screen and (max-width:600px) {
+    .package {
+        padding-block: 20rem 2rem;
+    }
+
+    .tour-card {
+        margin-inline: auto;
+        width: 90%;
+        padding: 2.5rem;
+    }
 }
 
 .tour-highlight {
     display: flex;
     align-items: center;
     column-gap: 3rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
 }
 
 .tour-highlight>* {
@@ -597,7 +608,6 @@ main>section+section {
 .tour-card .btn {
     width: fit-content;
 }
-
 
 
 
