@@ -576,9 +576,12 @@ main>section+section {
     margin-top: 3.2rem;
 }
 
-/* .video__content>video {
-    height: 100%;
-} */
+
+.video__content>video {
+    width: 100%;
+    border-radius: var(--border-radius);
+    margin-top: 5rem;
+}
 
 
 
@@ -692,6 +695,3 @@ footer hr {
     width: 100%;
     background-color: rgba(19, 19, 24, 0.1);
 }
-
-
-@media screen and (max)
