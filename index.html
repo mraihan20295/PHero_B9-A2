@@ -37,9 +37,19 @@
                 modi mollitia iste ex obcaecati sequi.
             </p>
             <div class="search-field">
-                <input type="text" placeholder="where to">
-                <input type="text">
-                <input type="text">
+                <input type="text" list="countries" placeholder="Where go">
+                <datalist id="countries">
+                    <option>Maldives</option>
+                    <option>Indonesia</option>
+                    <option>Srilanka</option>
+                    <option>Kashmir</option>
+                    <option>Bangladesh</option>
+                </datalist>
+                <input type="date" placeholder="When">
+                <select aria-placeholder="Select Type">
+                    <option value="">Single Trip</option>
+                    <option value="">Round Trip</option>
+                </select>
                 <button class="btn" type="submit">Find Now</button>
             </div>
         </section>
@@ -181,18 +191,20 @@
 
     <footer>
         <section class="container--footer">
-            <a class="site-title">
-                <img src="Images/site-logo.png" alt="">
-                <p>Hero Travel</p>
+            <a href="" class="site-title">
+                <div class="site-logo"><img src="Images/site-logo.png" alt=""></div>
+                <p>
+                    Hero <span>Travel</span>
+                </p>
             </a>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ullam non architecto, aperiam, omnis
                 deserunt aspernatur earum vitae sint repellat, quisquam assumenda.
             </p>
             <div class="social-links">
-                <img src="Images/1Twitter.png" alt="">
-                <img src="Images/2facebook.png" alt="">
-                <img src="Images/3instagram.png" alt="">
-                <img src="Images/4github.png" alt="">
+                <a href=""><img src="Images/1Twitter.png" alt=""></a>
+                <a href=""><img src="Images/2facebook.png" alt=""></a>
+                <a href=""><img src="Images/3instagram.png" alt=""></a>
+                <a href=""><img src="Images/4github.png" alt=""></a>
             </div>
             <hr>
             <p class="copyright">&copy;2024, All Rights Reserved.</p>

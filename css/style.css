@@ -127,6 +127,7 @@ main>section+section {
 
     .grid-cols-2>* {
         margin-bottom: 5rem;
+        width: 100%;
     }
 }
 
@@ -266,6 +267,8 @@ main>section+section {
 .hero {
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url(../Images/hero.png);
+    background-size: cover;
+    background-position: center;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     text-align: center;
@@ -281,20 +284,68 @@ main>section+section {
 }
 
 .hero>p {
-    max-width: 70%;
+    max-width: 60%;
     margin-inline: auto;
 }
 
 
 .search-field {
     margin-top: 4.8rem;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius-small);
+    padding: 16px;
+    width: 75%;
+    margin-inline: auto;
+    /* height: 100px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* justify-content: center; */
+    column-gap: 2.4rem;
+    /* flex-direction: row; */
 
     /* border: 1rem solid tomato; */
 }
 
+.search-field>* {
+    width: 100%;
+}
+
+.search-field input,
+.search-field select {
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    /* color: #fff; */
+    font-weight: 400;
+    /* background: ; */
+    padding: 16px 34px;
+    border-radius: 8px;
+    outline: 0;
+    /* cursor: pointer; */
+    /* transition: filter 0.15s; */
+    white-space: nowrap;
+    border: 0;
+}
+
+.search-field input::placeholder {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        padding-block: 5rem;
+    }
+
+
+    .search-field {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap: 2.4rem;
+    }
+
+
+}
 
 
 /* Blog */
@@ -430,6 +481,26 @@ main>section+section {
 .destination__grid .Bandarban::after {
     content: "Bandarban";
 }
+
+
+
+@media screen and (max-width: 600px) {
+    .destination__grid {
+        display: block;
+    }
+
+    .destination__grid>* {
+        display: block;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .destination__grid>a>img {
+        width: 100%;
+    }
+}
+
+
 
 
 /* Why Choose Us */
@@ -592,7 +663,7 @@ main>section+section {
 
 footer {
     background: rgba(19, 19, 24, 0.05);
-    padding-block: 8rem;
+    padding-block: 6rem;
 }
 
 .container--footer {
@@ -612,6 +683,7 @@ footer p {
 footer .social-links {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     column-gap: 25px;
 }
 
@@ -620,3 +692,6 @@ footer hr {
     width: 100%;
     background-color: rgba(19, 19, 24, 0.1);
 }
+
+
+@media screen and (max)
