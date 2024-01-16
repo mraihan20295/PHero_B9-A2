@@ -534,6 +534,74 @@ main>section+section {
     }
 }
 
+
+/* Offers */
+
+.package-1 {
+    background: url(../Images/offer-pkg-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-block: 5rem;
+    border-radius: var(--border-radius);
+}
+
+.tour-card {
+    margin-inline: auto 5rem;
+    width: 60%;
+    padding: 5rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+
+@media screen and (max-width:600px) {
+    .package-1 {
+        padding-block: 5rem;
+    }
+
+    .tour-card {
+        margin-block: auto 5rem;
+        width: 90%;
+        height: 60%;
+        padding: 5rem;
+    }
+}
+
+
+.tour-card p {
+    margin-top: 0;
+}
+
+.tour-highlight {
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.tour-highlight>* {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.tour-price {
+    color: var(--color-accent);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.tour-card .btn {
+    width: fit-content;
+}
+
+
+
+
+
 /* Mountain Video */
 
 .video__text ul {
