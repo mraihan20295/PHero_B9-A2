@@ -462,7 +462,7 @@ main>section+section {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .destination__grid {
         display: block;
     }
