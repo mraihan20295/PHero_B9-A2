@@ -685,6 +685,10 @@ main>section+section {
     padding: 4rem;
 }
 
+.newsletter h2 {
+    font-size: 2.4rem;
+}
+
 .newsletter p {
     margin-top: 1.6rem;
 }
